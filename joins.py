@@ -66,6 +66,7 @@ LEFT JOIN StudentAdvisor ON Advisor.AdvisorID = StudentAdvisor.AdvisorID
 GROUP BY Advisor.AdvisorID
 ''')
 
+print("Advisors and Students counts:")
 for row in cursor.fetchall():
     print(row)
 
